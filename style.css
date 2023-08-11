@@ -1,0 +1,699 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Grotesk";
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.container-for-secitons {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ae3ec9;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #da77f2;
+}
+
+/* ******************************************************** */
+/* HEADER SECTION */
+/* ******************************************************** */
+
+.header {
+  background-color: #130749;
+  padding-bottom: 2rem;
+}
+
+.site-name:link,
+.site-name:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.navigation-ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navigation-a:link,
+.navigation-a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
+}
+
+.navigation-a:hover,
+.navigation-a:active {
+  background: linear-gradient(90deg, #364fc7, #862e9c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu-icons {
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-icons:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #000;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .title {
+  margin-top: 10rem;
+}
+
+.nav-bar-icons {
+  font-size: 4rem;
+}
+
+.menu {
+  color: #fff;
+}
+
+.close {
+  color: #000;
+}
+
+.menu,
+.close {
+  display: none;
+}
+
+/* **************************************************** */
+/* SECTION HERO */
+/* **************************************************** */
+
+.section-hero {
+  background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%);
+  min-height: 90vh;
+}
+
+h1 {
+  font-size: 8rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.under-h1 {
+  font-size: 9rem;
+  background: linear-gradient(90deg, #440ceb, #d737ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.title {
+  line-height: 1.1;
+  text-align: center;
+  padding-top: 9.6rem;
+  padding-bottom: 2rem;
+}
+
+.crypto-div {
+  text-align: center;
+}
+
+.crypto-photo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.p-under-crypto-photo {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.span-under-crypto-photo {
+  color: red;
+  font-weight: 500;
+}
+
+.price {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.main-div-of-crypto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+/* **************************************************** */
+/* SECTION MARKET */
+/* **************************************************** */
+
+.market-seciton {
+  background-color: #0f051d;
+}
+
+.market-section-first-h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.names {
+  display: grid;
+  grid-template-columns: 16fr 25fr 25fr 25fr;
+  text-align: right;
+  padding: 1.4rem;
+  max-width: 100%;
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  border-radius: 8px 8px 0 0;
+}
+
+.coin,
+.price-title,
+.time,
+.market {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.coin {
+  text-align: left;
+}
+
+.list-bitcoin {
+  width: 5rem;
+  height: 5rem;
+}
+
+.text-of-bitcoin {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.flex-of-crypto-photos-and-names {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.span-under-price {
+  color: red;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.grid-of-crypto-lists {
+  display: grid;
+  grid-template-columns: 16fr 25fr 25fr 25fr;
+  padding: 2rem 1.4rem 2rem 1.4rem;
+  text-align: right;
+  align-items: center;
+  max-width: 100%;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.grid-of-crypto-lists:hover {
+  background-color: rgba(20, 0, 250, 0.1);
+}
+
+.div-of-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.class-of-buttons {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* **************************************************** */
+/* SECTION WHY */
+/* **************************************************** */
+
+.why-section {
+  background-color: #0f051d;
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.title-of-why-section {
+  font-size: 7rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 8rem;
+}
+
+.mixed-color-span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+}
+
+.choose-icon {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.choose-box-icon {
+  align-items: center;
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  border-radius: 1.6rem;
+  display: flex;
+  height: 6rem;
+  padding: 1.5rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-box-text h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+.choose-box-text p {
+  font-size: 1.8rem;
+  text-align: left;
+  color: #fff;
+  font-weight: 500;
+}
+
+.photo-of-hand {
+  width: 35rem;
+}
+
+.choose-box {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 1px solid hsla(0, 0%, 51%, 0.25);
+  border-radius: 2.4rem;
+  display: flex;
+  font-family: Noto Sans Georgian, sans-serif;
+  gap: 4rem;
+  justify-content: center;
+  padding: 2.4rem;
+  max-width: 100%;
+}
+
+.main-flex-of-choose-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-of-choose-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 5rem;
+  padding-top: 5rem;
+}
+
+/* **************************************************** */
+/* SECTION JOIN */
+/* **************************************************** */
+
+.join-section {
+  padding: 9.6rem 9.6rem 0 9.6rem;
+  background-color: #0f051d;
+}
+
+.box-title-of-join-section {
+  text-align: center;
+  line-height: 1;
+}
+
+.title-of-join-section {
+  color: #fff;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.mixed-color-p {
+  font-size: 6rem;
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  padding-bottom: 2rem;
+}
+
+.p-under-mixed-color-p {
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 5rem;
+}
+
+.link-of-discord:link,
+.link-of-discord:visited {
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  border-radius: 10rem;
+  color: #f3f2f4;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 4rem;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.icons-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icons-of-social-medias {
+  font-size: 4rem;
+  color: #fff;
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+
+.usage-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.usage:link,
+.usage:visited {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.usage:hover,
+.usage:active {
+  background: linear-gradient(90deg, #364fc7, #862e9c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.flex-of-last-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-and-usage-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* **************************************************************************************** */
+/* RESPONSIVE DESIGN */
+/* **************************************************************************************** */
+
+@media (max-width: 89em) {
+  .section-hero {
+    padding-bottom: 4rem;
+  }
+
+  .why-section {
+    padding: 9.6rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 81em) {
+  .title-of-why-section {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+
+  .why-section {
+    padding: 0rem 12rem 0 12rem;
+  }
+
+  .grid-of-choose-content {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .last-2-photo {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .flex-of-last-section {
+    padding-top: 5rem;
+  }
+
+  .hand-div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 61em) {
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .navigation-ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar .navigation {
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .navigation-a:link,
+  .navigation-a:visited {
+    color: black;
+    font-size: 3rem;
+  }
+
+  .menu-icons-parent {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .close {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2.1rem;
+  }
+
+  .header-flex {
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .main-div-of-crypto {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+  }
+}
+
+@media (max-width: 46em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .last-2-photo {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .icons-of-social-medias {
+    font-size: 3rem;
+  }
+
+  .usage-box {
+    gap: 2rem;
+  }
+
+  .usage-box {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 39em) {
+  .last-2-photo {
+    display: none;
+  }
+
+  .icons-of-social-medias {
+    font-size: 4.6rem;
+  }
+
+  .flex-of-last-section {
+    justify-content: center;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
+
+  .usage {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 33em) {
+  .why-section {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .scroll-bar {
+    width: 100%; /* Set a desired width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of contents */
+  }
+
+  .grid-of-crypto-lists {
+    display: inline-block; /* Display each cryptocurrency as inline-block */
+    vertical-align: top; /* Align each item to the top */
+    margin-right: 2rem; /* Add some spacing between items */
+    border: none;
+    text-align: center;
+    grid-gap: 4rem;
+  }
+
+  .names {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .coin {
+    text-align: center;
+  }
+
+  .test {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .under-h1 {
+    font-size: 7rem;
+  }
+}
